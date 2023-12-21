@@ -20,10 +20,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={dmSans.className}>
-        <main className="max-w-7xl mx-auto bg-[#0F1117]">
+      <body className={`${dmSans.className} flex flex-col min-h-screen`} >
+        <main className="max-w-7xl mx-auto flex-grow bg-[#0F1117]">
           <Hero />
-          {children}
+            {children}
           <Footer />
         </main>
       </body>
